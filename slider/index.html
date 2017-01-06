@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta charset="windows-1251" />
+        <title>Слайдшоу c jmpress.js | pcvector.net</title>
+        <meta name="description" content="Слайдшоу с jmpress.js" />
+        <meta name="keywords" content="jmpress, slideshow, контейнер, container, слайдер, слайдщоу, plugin, jquery, css3" />
+        <link rel="shortcut icon" href="/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
+		<![endif]-->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- jmpress plugin -->
+		<script type="text/javascript" src="js/jmpress.min.js"></script>
+		<!-- jmslideshow plugin : extends the jmpress plugin -->
+		<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.48780.js"></script>
+		<noscript>
+			<style>
+			.step {
+				width: 100%;
+				position: relative;
+			}
+			.step:not(.active) {
+				opacity: 1;
+				filter: alpha(opacity=99);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+			}
+			.step:not(.active) a.jms-link{
+				opacity: 1;
+				margin-top: 40px;
+			}
+			</style>
+		</noscript>
+    </head>
+    <body>
+	
+
+	
+        <div class="container">
+			
+			<section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color-1">
+					<div class="jms-content">
+						<h3>F-4J Phantom II</h3>
+						<p>Первый полет YF-4J состоялся 4 июня 1964 года.</p>
+						
+					</div>
+					<img src="images/1.png" />
+				</div>
+				<div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
+					<div class="jms-content">
+						<h3>F-4J Phantom II</h3>
+						<p>Самолеты оснастили новыми двигателями J79-GE-10, тягой 8119 кг на форсаже.</p>
+						
+					</div>
+					<img src="images/2.png" />
+				</div>
+				<div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
+					<div class="jms-content">
+						<h3>F-4J Phantom II</h3>
+						<p>Самолеты F-4J получили новую систему бомбометания AN/AJB-7, обеспечивавшую всевысотное применения ядерных и обычных бомб.</p>
+						
+					</div>
+					<img src="images/3.png" />
+				</div>
+				<div class="step" data-color="color-4" data-x="3000">
+					<div class="jms-content">
+						<h3>F-4J Phantom II</h3>
+						<p>Серийное производство осуществлялось 1966 года по январь 1972 года. Всего было выпущено 522 истребителя F-4J.</p>
+						
+					</div>
+					<img src="images/4.png" />
+				</div>
+				<div class="step" data-color="color-5" data-x="4500" data-z="1000" data-rotate-y="45">
+					<div class="jms-content">
+						<h3>F-4J Phantom II</h3>
+						<p>В январе 1969 года семь доработанных F-4J поступило в пилотажную группу "Blue Angels", которая летала на них до конца 1973 года. </p>
+						
+					</div>
+					<img src="images/5.png" />
+				</div>
+			</section>
+        </div>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#jms-slideshow' ).jmslideshow();
+				
+			});
+		</script>
+		
+<!-- pcvector.net -->
+<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+<!-- /pcvector.net -->
+    </body>
+</html>

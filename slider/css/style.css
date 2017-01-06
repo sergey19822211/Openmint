@@ -1,0 +1,211 @@
+.jms-slideshow {
+	position: relative;
+	width: 920px;
+	max-width: 1400px;
+	min-width: 640px;
+	margin:0 auto;
+	height: 300px;
+}
+.jms-wrapper {
+	width: auto;
+	min-width: 600px;
+	height: 307px;	     
+	background-clip: padding-box;
+	outline: none;
+	-webkit-transition: background-color 1s linear;
+	-moz-transition: background-color 1s linear;
+	-o-transition: background-color 1s linear;
+	-ms-transition: background-color 1s linear;
+	transition: background-color 1s linear;
+	border-radius:20px;
+	
+}
+
+.step {	
+	width: 900px;
+    height: 420px;
+	display: block;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+    
+}
+.step:not(.active) {
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+}
+.jms-content{
+	margin: 0px 370px 0px 20px;
+	position: relative;
+	clear: both;
+	
+}
+
+.step h3{
+	color: #ebebeb;
+	font-family:Gill Sans MT;
+	font-size: 45px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	margin:30px 70px;
+	padding: 60px 0 10px 0;
+	
+}
+.step h4{
+	color: #ebebeb;
+	font-family:Gill Sans MT;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	margin:-100px 70px;
+	padding: 60px 0 10px 0;
+}
+.step p {
+	color: #ebebeb;
+	font-family:Gill Sans MT;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	margin: 120px 65px 0;
+}
+.step span{
+	color: #ffffff;
+	font-family:Gill Sans MT;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left:15px;
+}
+a.jms-link{
+	color: #fff;
+	text-transform: uppercase;
+    background:linear-gradient( to bottom,#669900 ,#8bb23e  );
+	border-top:;
+	border-bottom:;
+	border-radius:15px;
+	padding: 8px 15px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	
+	opacity: 1;
+	margin-top:30px;
+
+	clear: both;
+	-webkit-transition: all  1s;
+	-moz-transition: all  1s;
+	-ms-transition: all  1s;
+	-o-transition: all  1s;
+	transition: all  1s;
+	
+}
+a.jms-link:hover{
+	background:linear-gradient( to bottom,#8bb23e,#669900);
+	border-top:;
+	border-bottom:;
+	box-shadow: 0px 0px 10px #8bb23e;
+	color: #1d4671;
+}
+.link1{
+	margin-left:60px;
+}
+.link2{
+	margin-left:20px;
+}
+
+.step:not(.active) a.jms-link{
+	opacity: 0;
+	margin-top: 80px;
+}
+.step img{
+	position: absolute;
+	right: 60px;
+	top: 90px;
+}
+
+
+.jms-arrows{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.jms-arrows span{
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	z-index: 2000;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	border:5px solid #103358;
+}
+.jms-arrows span.jms-arrows-prev{
+	background: #ffffff;
+	background-image:url(../images/left_arrow.png);
+	background-repeat:no-repeat;
+	background-position:14px 14px;
+	left: -10px;
+	 
+transition:all 1s linear;
+-moz-transition:all 1s linear;
+-webkit-transition:all 1s linear;
+-o-transition:all 1s linear;
+}
+.jms-arrows span.jms-arrows-prev:hover{
+	border:5px solid #ffffff;
+	 transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+.jms-arrows span.jms-arrows-next{
+	background: #ffffff;
+	background-image:url(../images/right_arrow.png);
+	background-repeat:no-repeat;
+	background-position:19px 17px;
+	right: -10px;
+	 transition:all 1s linear;
+-moz-transition:all 1s linear;
+-webkit-transition:all 1s linear;
+-o-transition:all 1s linear;
+	
+}
+.jms-arrows span.jms-arrows-next:hover{
+	border:5px solid #ffffff;
+	transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+/* Not supported style */
+.jms-wrapper.not-supported{
+	background-color: #E3D8FF;
+	background-color: rgba(227, 216, 268, 1);
+}
+.jms-wrapper.not-supported:after{
+	content: 'The slideshow functionality is not supported on your device.';
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	display: block;
+}
+.jms-wrapper.not-supported .step{
+	display: none;
+	position: relative;
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+	margin: 20px auto;
+}
+.jms-wrapper.not-supported .step:first-of-type{
+	display: block;
+}
+.jms-wrapper.not-supported .step:not(.active) a.jms-link{
+	opacity: 1;
+	margin-top: 40px;
+}
